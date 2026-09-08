@@ -1,0 +1,8 @@
+CompileFlags:
+  Add:
+    - -L../opencv-3.4.16/build-arm/lib
+    - -I../ncnn-master/src
+    - -I../ncnn-master/build_imx6ull/src/
+    - -L../ncnn-master/build_imx6ull/src/
+    - -I/opt/opencv-arm/include
+    - -std=c++11

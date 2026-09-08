@@ -1,0 +1,37 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc build active file",
+			"command": "arm-buildroot-linux-gnueabihf-g++",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}",
+				"-I", "../ncnn-master/src",
+				"-I", "../ncnn-master/build_imx6ull/src/",
+				"-I", "/opt/opencv-arm/include",
+				"-L", "../opencv-3.4.16/build-arm/lib",
+				"-L", "../ncnn-master/build_imx6ull/src/",
+				"-lncnn",
+				"-lopencv_core",
+				"-lopencv_imgproc",
+				"-lopencv_imgcodecs"	
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: /usr/bin/gcc"
+		}
+	]
+}
