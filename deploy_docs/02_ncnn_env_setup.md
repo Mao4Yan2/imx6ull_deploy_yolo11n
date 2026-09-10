@@ -22,7 +22,7 @@ PC 上执行 cmake
 ```angular2html
 # 首先拉取 NCNN 代码：
 https://github.com/Tencent/ncnn
-unzip ncnn-maste.zip 
+unzip ncnn-master.zip 
 
 # 安装相关依赖：
 sudo apt update

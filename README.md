@@ -1,5 +1,16 @@
 # 在imx6ull部署yolo11n
 
+## 目录
+
+```text
+project/
+├── 0012_imx6ull_deploy_yolo11n/
+├── ncnn-master/
+└── opencv-3.4.16/
+```
+`0012_imx6ull_deploy_yolo11n/`就是该文件夹
+`ncnn-master/`和`opencv-3.4.16/`请看后面教程自行下载
+
 ## 文档目录 deploy_docs
 | 文件                          | 内容            |
 |:----------------------------|:--------------|
